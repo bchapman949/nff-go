@@ -1,0 +1,32 @@
+[
+    {
+        "name": "AllowService1",
+        "regexp": "Host: [a-z-]*.facebook.com",
+        "allow": true
+    },
+    {
+        "name": "AllowService2",
+        "regexp": "Host: [a-z-]*netflix[0-9a-z.]*nflximg.com",
+        "allow": true
+    },
+    {
+        "name": "VideoDownl",
+        "regexp": "Content-Type: video",
+        "allow": true
+    },
+    {
+        "name": "GoodHTTP",
+        "regexp": "Content-Type: (text/html|text/css|image)",
+        "allow": true
+    },
+    {
+        "name": "BlockJavaScriptAppType",
+        "regexp": "Content-Type: application/(x-|)javascript",
+        "allow": false
+    },
+    {
+        "name": "BlockJavaScriptInHTML",
+        "regexp": "((<[\\s\\/]*script\\b[^>]*>)([^>]*)(<\\/script>))",
+        "allow": false
+    }
+]

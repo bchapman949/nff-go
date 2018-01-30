@@ -13,5 +13,8 @@ gopacket:
 gopacket_parser_example: gopacket
 	go build gopacket_parser_example.go
 
+dpi: gohs
+	make -C dpi
+
 include $(PATH_TO_MK)/intermediate.mk
 include $(PATH_TO_MK)/leaf.mk
